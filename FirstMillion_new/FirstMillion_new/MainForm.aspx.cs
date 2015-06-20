@@ -287,7 +287,7 @@ namespace FirstMillion_new
                 var fromAddress = new MailAddress("olzadorozhna@gmail.com", "Ольга");
                 var toAddress = new MailAddress(TxtMail.Text, "Володя");
 
-                const string fromPassword = "vbhjckfdjkz123789";
+                const string fromPassword = "мій пароль";
                 const string subject = "Допомога друга";
                 string body = "Запитання: " + allQuestions[step].Quest + " Відповіді: A: " + allQuestions[step].Answers[0] +
                      ", B: " + allQuestions[step].Answers[1] + ", C: " + allQuestions[step].Answers[2] + ", D: " + allQuestions[step].Answers[0] + ". ";
