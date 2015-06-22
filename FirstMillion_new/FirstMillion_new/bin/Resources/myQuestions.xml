@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<ArrayOfQuestion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Question>
+    <Quest>Скільки ночей Шахеризада розказувала казки?</Quest>
+    <Answers>
+      <string>1000</string>
+      <string>1100</string>
+      <string>1001</string>
+      <string>1010</string>
+    </Answers>
+    <RightAnswer>2</RightAnswer>
+  </Question>
+  <Question>
+    <Quest>Куди відпочиваючих на водоймі просять не запливати?</Quest>
+    <Answers>
+      <string>За кордон</string>
+      <string>За тридев'ять земель</string>
+      <string>За горизонт</string>
+      <string>За буйки</string>
+    </Answers>
+    <RightAnswer>3</RightAnswer>
+  </Question>
+  <Question>
+    <Quest>Що вивчає уфологія?</Quest>
+    <Answers>
+      <string>Міфи</string>
+      <string>НЛО</string>
+      <string>Прогноз погоди</string>
+      <string>Історію</string>
+    </Answers>
+    <RightAnswer>1</RightAnswer>
+  </Question>
+  <Question>
+    <Quest>Символ виклику суперника поєдинок?</Quest>
+    <Answers>
+      <string>Камінь</string>
+      <string>Рукавичка</string>
+      <string>Капелюх</string>
+      <string>Гроші</string>
+    </Answers>
+    <RightAnswer>1</RightAnswer>
+  </Question>
+  <Question>
+    <Quest>Що, переважно, вішають нам на вуха учасники передвиборних кампаній?</Quest>
+    <Answers>
+      <string>Сережки</string>
+      <string>Серпантин</string>
+      <string>Навушники</string>
+      <string>Лапшу</string>
+    </Answers>
+    <RightAnswer>3</RightAnswer>
+  </Question>
+  <Question>
+    <Quest>Що допомагає нетверезій людині дістатись додому?</Quest>
+    <Answers>
+      <string>Автостоп</string>
+      <string>Автопілот</string>
+      <string>Автонавігація</string>
+      <string>Міліція</string>
+    </Answers>
+    <RightAnswer>1</RightAnswer>
+  </Question>
+  <Question>
+    <Quest>Як називається період, що настає після весілля?</Quest>
+    <Answers>
+      <string>Тиха година</string>
+      <string>Санітарний день</string>
+      <string>Мертвий сезон</string>
+      <string>Медовий місяць</string>
+    </Answers>
+    <RightAnswer>3</RightAnswer>
+  </Question>
+  <Question>
+    <Quest>Кого хотів з'їсти вовк у казочці 'Червона шапочка'?</Quest>
+    <Answers>
+      <string>Зайця</string>
+      <string>Пиріжки</string>
+      <string>Бабусю</string>
+      <string>Червону шапочку</string>
+    </Answers>
+    <RightAnswer>2</RightAnswer>
+  </Question>
+  <Question>
+    <Quest>Яку планету називають червоною?</Quest>
+    <Answers>
+      <string>Марс</string>
+      <string>Плутон</string>
+      <string>Венеру</string>
+      <string>Юпітер</string>
+    </Answers>
+    <RightAnswer>0</RightAnswer>
+  </Question>
+  <Question>
+    <Quest>Силою якої тварини прийнято вимірювати потужність двигунів?</Quest>
+    <Answers>
+      <string>Осел</string>
+      <string>Козел</string>
+      <string>Бик</string>
+      <string>Кінь</string>
+    </Answers>
+    <RightAnswer>3</RightAnswer>
+  </Question>
+  <Question>
+    <Quest>При падінні чого прийнято загадувати бажання?</Quest>
+    <Answers>
+      <string>Зірки</string>
+      <string>Мотивації</string>
+      <string>Дисципліни</string>
+      <string>Температури</string>
+    </Answers>
+    <RightAnswer>0</RightAnswer>
+  </Question>
+  <Question>
+    <Quest>Хто зіграв роль Лілу у фільмі п'ятий елемент?</Quest>
+    <Answers>
+      <string>Памела Андерсон</string>
+      <string>Міла Йовович</string>
+      <string>Анджеліна Джолі</string>
+      <string>Брітні Спірс</string>
+    </Answers>
+    <RightAnswer>1</RightAnswer>
+  </Question>
+  <Question>
+    <Quest>На якому інструменты грав Шерлок Холмс?</Quest>
+    <Answers>
+      <string>Флейта</string>
+      <string>Труба</string>
+      <string>Скрипка</string>
+      <string>Саксофон</string>
+    </Answers>
+    <RightAnswer>2</RightAnswer>
+  </Question>
+  <Question>
+    <Quest>Veni, vidi, vichi сказав...</Quest>
+    <Answers>
+      <string>Гітлер</string>
+      <string>Македонський</string>
+      <string>Цезар</string>
+      <string>Наполеон</string>
+    </Answers>
+    <RightAnswer>2</RightAnswer>
+  </Question>
+  <Question>
+    <Quest>Який код повертає сервер, якщо документ не знайдено?</Quest>
+    <Answers>
+      <string>505</string>
+      <string>404</string>
+      <string>606</string>
+      <string>202</string>
+    </Answers>
+    <RightAnswer>1</RightAnswer>
+  </Question>
+</ArrayOfQuestion>
