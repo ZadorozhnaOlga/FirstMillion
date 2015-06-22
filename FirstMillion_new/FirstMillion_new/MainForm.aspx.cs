@@ -48,7 +48,7 @@ namespace FirstMillion_new
                 allQuestions = (Question[])formatter.Deserialize(fs);
             }
             Buttons = new Button[4] { BtnA, BtnB, BtnC, BtnD };
-            FillCells(allQuestions[step]);
+            if (step == 0) { FillCells(allQuestions[step]); };
 
             if (((bool?)Session[SessionKey5050]).GetValueOrDefault())
             {
@@ -92,8 +92,10 @@ namespace FirstMillion_new
 
             BtnCall.Enabled = false;
 
-            TxtMail.CssClass = "MailVisible";
+            TxtMailTo.CssClass = "MailVisible";
             BtnSend.CssClass = "SendVisible";
+            TxtMyMail.CssClass = "MailVisible";
+            TxtPass.CssClass = "MailVisible";
             foreach (Button btn in Buttons)
             {
                 btn.Enabled = false;
@@ -111,9 +113,23 @@ namespace FirstMillion_new
             
         }
 
+        //private void GetDefaultClasses()
+        //{
+            
+        //            BtnA.Attributes.Add("cssClass", "tableAnswerA");
+                   
+        //            BtnB.Attributes.Add("cssClass", "tableAnswerB");
+                    
+        //            BtnC.Attributes.Add("cssClass", "tableAnswerC");
+                    
+        //            BtnD.Attributes.Add("cssClass", "tableAnswerD");
+                    
+            
+        //}
+
         //private void ShowRightAnswer()
         //{
-        //    switch (allQuestions[step].RightAnswer) 
+        //    switch (allQuestions[step].RightAnswer)
         //    {
         //        case 0:
         //            BtnA.Attributes.Add("cssClass", "tableAnswerARight");
@@ -153,6 +169,7 @@ namespace FirstMillion_new
 
         private void FillCells(Question question)
         {
+            //ActiveSum(step);
             BtnQuestion.Text = question.Quest;
             for (int i = 0; i < 4; i++) 
             {
@@ -216,13 +233,14 @@ namespace FirstMillion_new
         }
         public void CheckAnswer(Question quest, int answerId)
         {
-            
+            //ShowRightAnswer();
             if ((quest.RightAnswer == answerId) && (step != 14))
             {
                 
                 step += 1;
-                FillCells(allQuestions[step]);
-                ActiveSum(step);
+                
+               FillCells(allQuestions[step]);
+               ActiveSum(step);
                 
             }
             else if ((quest.RightAnswer == answerId) && (step == 14))
@@ -282,12 +300,12 @@ namespace FirstMillion_new
         protected void BtnSend_Click(object sender, EventArgs e)
         {
             
-            if (TxtMail.Text != "")
+            if ((TxtMailTo.Text != "") && (TxtMyMail.Text != ""))
             {
-                var fromAddress = new MailAddress("olzadorozhna@gmail.com", "Ольга");
-                var toAddress = new MailAddress(TxtMail.Text, "Володя");
+                var fromAddress = new MailAddress(TxtMyMail.Text, "Ольга");
+                var toAddress = new MailAddress(TxtMailTo.Text, "Володя");
 
-                const string fromPassword = "мій пароль";
+                 string fromPassword = TxtPass.Text;
                 const string subject = "Допомога друга";
                 string body = "Запитання: " + allQuestions[step].Quest + " Відповіді: A: " + allQuestions[step].Answers[0] +
                      ", B: " + allQuestions[step].Answers[1] + ", C: " + allQuestions[step].Answers[2] + ", D: " + allQuestions[step].Answers[0] + ". ";
@@ -307,9 +325,9 @@ namespace FirstMillion_new
                     Body = body
                 })
                 {
-                    smtp.Send(message);
+                     smtp.Send(message);
                 }
-                TxtMail.CssClass = "Mail";
+                TxtMailTo.CssClass = "Mail";
                 BtnSend.CssClass = "Send";
                 Session[SessionKeyCall] = true;
                 BtnCall.CssClass = "BtnCallUsed";
@@ -320,7 +338,7 @@ namespace FirstMillion_new
             }
             else
             {
-                TxtMail.Text = "Потрібно ввести адресу";
+                TxtMailTo.Text = "Потрібно ввести адресу";
             }
 
             

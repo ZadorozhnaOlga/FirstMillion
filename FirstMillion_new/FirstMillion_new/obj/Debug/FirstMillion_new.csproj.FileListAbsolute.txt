@@ -7,3 +7,12 @@ D:\visual_studio\ASP\FirstMillion_new\FirstMillion_new\obj\Debug\FirstMillion_ne
 D:\visual_studio\ASP\FirstMillion_new\FirstMillion_new\obj\Debug\FirstMillion_new.dll
 D:\visual_studio\ASP\FirstMillion_new\FirstMillion_new\obj\Debug\FirstMillion_new.pdb
 D:\visual_studio\ASP\FirstMillion_new\FirstMillion_new\bin\Resources\myQuestions.xml
+C:\Users\Оля\Desktop\FirstMillion\FirstMillion\FirstMillion_new\FirstMillion_new\obj\Debug\FirstMillion_new.csprojResolveAssemblyReference.cache
+C:\Users\Оля\Desktop\FirstMillion\FirstMillion\FirstMillion_new\FirstMillion_new\obj\Debug\FirstMillion_new.Properties.Resources.resources
+C:\Users\Оля\Desktop\FirstMillion\FirstMillion\FirstMillion_new\FirstMillion_new\obj\Debug\FirstMillion_new.csproj.GenerateResource.Cache
+C:\Users\Оля\Desktop\FirstMillion\FirstMillion\FirstMillion_new\FirstMillion_new\obj\Debug\FirstMillion_new.dll
+C:\Users\Оля\Desktop\FirstMillion\FirstMillion\FirstMillion_new\FirstMillion_new\bin\Resources\myQuestions.xml
+C:\Users\Оля\Desktop\FirstMillion\FirstMillion\FirstMillion_new\FirstMillion_new\bin\FirstMillion_new.dll.config
+C:\Users\Оля\Desktop\FirstMillion\FirstMillion\FirstMillion_new\FirstMillion_new\bin\FirstMillion_new.dll
+C:\Users\Оля\Desktop\FirstMillion\FirstMillion\FirstMillion_new\FirstMillion_new\bin\FirstMillion_new.pdb
+C:\Users\Оля\Desktop\FirstMillion\FirstMillion\FirstMillion_new\FirstMillion_new\obj\Debug\FirstMillion_new.pdb

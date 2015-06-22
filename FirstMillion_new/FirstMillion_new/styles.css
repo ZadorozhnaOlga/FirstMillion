@@ -143,7 +143,7 @@
     width: 350px;
     height: 750px;
     left: 1030px;
-    top: 40px;
+    top: 10px;
     border: white;
     /*background: url(Resources/scoresBlock.png) no-repeat;*/
     color: white;
@@ -151,7 +151,7 @@
 
 .tableCell {
     color: orange;
-    height:27px;
+    height:20px;
     font-size: 25px;
     font-family:fantasy;
     border: 1px solid white;
@@ -174,7 +174,7 @@
 }
 
 .Tooltips{
-    height:59px;
+    height:70px;
 }
 
 

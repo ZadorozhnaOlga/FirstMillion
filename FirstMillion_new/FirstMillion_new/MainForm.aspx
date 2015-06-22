@@ -28,7 +28,7 @@
                     <asp:Button ID="BtnA" runat="server" CssClass="tableAnswerA" OnClick="BtnA_Click" />
                 </td>
                 <td class="tableAnswer">
-                    <asp:Button ID="BtnB" runat="server" CssClass="tableAnswerB" OnClick="BtnB_Click" />
+                    <asp:Button ID="BtnB" runat="server" CssClass="tableAnswerB" OnClick="BtnB_Click"  />
                 </td>
             </tr>
             <tr>
@@ -47,7 +47,9 @@
                 <asp:Button ID="Btn5050" runat="server" CssClass="Btn5050" OnClick="Btn5050_Click" />
                 <asp:Button ID="BtnCall" runat="server" CssClass="BtnCall" OnClick="BtnCall_Click" />
                 <asp:Button ID="BtnAsk" runat="server" CssClass="BtnAsk" OnClick="BtnAsk_Click" />
-                <asp:TextBox ID="TxtMail" runat="server" CssClass="Mail" TextMode="Email" placeholder ="Введіть адресу"></asp:TextBox>
+                <asp:TextBox ID="TxtMyMail" runat="server" CssClass="Mail" TextMode="Email" placeholder ="Введіть вашу адресу"></asp:TextBox>
+                <asp:TextBox ID="TxtPass" runat="server" CssClass="Mail" TextMode="Password" placeholder ="Введіть ваш пароль"></asp:TextBox>
+                <asp:TextBox ID="TxtMailTo" runat="server" CssClass="Mail" TextMode="Email" placeholder ="Введіть адресу"></asp:TextBox>
                 <asp:Button ID="BtnSend" runat="server" Text="Відправити" OnClick ="BtnSend_Click"  CssClass="Send" />
             </td>
         </tr>

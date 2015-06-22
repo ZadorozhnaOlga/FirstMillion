@@ -10,16 +10,29 @@
 //    //email.style.cssClass = "Mail";
 //    //btn.style.cssClass = "Send";
 //}
-var SendMail = function () {
-    //HideMail();
+//var SendMail = function () {
+//    //HideMail();
 
-    var email = document.getElementById('TxtMail').value;
-    if (email != "")
-    {
-        alert('На пошту ' + '"' + email + ' " ' + 'надіслано запит про допомогу.');
-    }
+//    var email = document.getElementById('TxtMail').value;
+//    if (email != "")
+//    {
+//        alert('На пошту ' + '"' + email + ' " ' + 'надіслано запит про допомогу.');
+//    }
     
     
     
    
-    };
+//    };
+
+
+//function FillCellsTimeout() {
+//    var stepp = '<% = step %>'
+
+//    var object = '<% = allQeustion[stepp] %>';
+//    var result = PageMethods.FillCells(object);
+//    return result;
+//}
+
+//function Wait() {
+//    setTimeout(FillCellsTimeout(), 1000);
+//}

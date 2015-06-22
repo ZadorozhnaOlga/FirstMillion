@@ -94,13 +94,31 @@ namespace FirstMillion_new {
         protected global::System.Web.UI.WebControls.Button BtnAsk;
         
         /// <summary>
-        /// TxtMail control.
+        /// TxtMyMail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtMail;
+        protected global::System.Web.UI.WebControls.TextBox TxtMyMail;
+        
+        /// <summary>
+        /// TxtPass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtPass;
+        
+        /// <summary>
+        /// TxtMailTo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtMailTo;
         
         /// <summary>
         /// BtnSend control.
