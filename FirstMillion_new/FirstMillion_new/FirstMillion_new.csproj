@@ -57,7 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="jquery.min.js" />
+    <Content Include="Jscripts\jquery.min.js" />
     <Content Include="MainForm.aspx" />
     <None Include="Resources\question.png" />
     <None Include="Resources\BtnA.png" />
@@ -84,11 +84,14 @@
     <None Include="Resources\BtnARight.png" />
     <None Include="Resources\BtnCRight.png" />
     <None Include="Resources\BtnDRight.png" />
-    <Content Include="scripts.js" />
-    <Content Include="styles.css" />
+    <Content Include="Jscripts\scripts.js" />
+    <Content Include="Css\styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\Question.cs" />
+    <Compile Include="App_Code\IQuestionRepository.cs" />
+    <Compile Include="App_Code\XmlQuestionRepository.cs" />
     <Compile Include="MainForm.aspx.cs">
       <DependentUpon>MainForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -102,7 +105,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Question.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">

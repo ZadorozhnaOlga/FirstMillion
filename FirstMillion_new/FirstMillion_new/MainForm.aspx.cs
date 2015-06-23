@@ -8,20 +8,22 @@ using System.IO;
 using System.Xml.Serialization;
 using System.Net;
 using System.Net.Mail;
+using FirstMillion_new.App_Code;
+
 
 
 namespace FirstMillion_new
 {
     public partial class MainForm : System.Web.UI.Page
     {
-        static Question[] allQuestions;
+        public IEnumerable<Question> allQuestions;
         public static int step;
         Random rnd = new Random();
         public Button[] Buttons;
         private const string SessionKey5050 = "50x50";
         private const string SessionKeyCall = "Call";
         private const string SessionKeyAsk = "Ask";
-        private static string _path = HttpContext.Current.Server.MapPath("/Resources/myQuestions.xml");
+        
 
 
 
@@ -29,12 +31,12 @@ namespace FirstMillion_new
 
         static MainForm()
         {
-            XmlSerializer formatter = new XmlSerializer(typeof(Question[]));
+            //XmlSerializer formatter = new XmlSerializer(typeof(Question[]));
 
-            using (FileStream fs = new FileStream(_path, FileMode.OpenOrCreate))
-            {
-                allQuestions = (Question[])formatter.Deserialize(fs);
-            }
+            //using (FileStream fs = new FileStream(_path, FileMode.OpenOrCreate))
+            //{
+            //    allQuestions = (Question[])formatter.Deserialize(fs);
+            //}
             step = 0;
 
         }
@@ -42,9 +44,13 @@ namespace FirstMillion_new
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            string str = Server.MapPath("/Resources/myQuestions.xml");
+            XmlQuestionRepository repo = new XmlQuestionRepository(str);
+            allQuestions = repo.GetQuestions();
+                    
             
             Buttons = new Button[4] { BtnA, BtnB, BtnC, BtnD };
-            FillCells(allQuestions[step]);
+            FillCells(allQuestions.ElementAt(step));
 
             if (((bool?)Session[SessionKey5050]).GetValueOrDefault())
             {
@@ -105,7 +111,7 @@ namespace FirstMillion_new
             BtnAsk.Enabled = false;
             Session[SessionKeyAsk] = true;
 
-            ClientScript.RegisterStartupScript(this.GetType(), "window.open", "window.open('https://www.google.com.ua/search?q=" + allQuestions[step].Quest + "')", true);
+            ClientScript.RegisterStartupScript(this.GetType(), "window.open", "window.open('https://www.google.com.ua/search?q=" + allQuestions.ElementAt(step).Quest + "')", true);
             
         }
 
@@ -130,23 +136,23 @@ namespace FirstMillion_new
 
         protected void BtnA_Click(object sender, EventArgs e)
         {
-            CheckAnswer(allQuestions[step], 0);
+            CheckAnswer(allQuestions.ElementAt(step), 0);
         }
 
         protected void BtnB_Click(object sender, EventArgs e)
         {
-            CheckAnswer(allQuestions[step], 1);
+            CheckAnswer(allQuestions.ElementAt(step), 1);
         }
 
         protected void BtnC_Click(object sender, EventArgs e)
         {
-            CheckAnswer(allQuestions[step], 2);
+            CheckAnswer(allQuestions.ElementAt(step), 2);
             
         }
 
         protected void BtnD_Click(object sender, EventArgs e)
         {
-            CheckAnswer(allQuestions[step], 3);
+            CheckAnswer(allQuestions.ElementAt(step), 3);
         }
 
         private void FillCells(Question question)
@@ -163,7 +169,7 @@ namespace FirstMillion_new
         {
             int i = rnd.Next(0, 4);
             int j = rnd.Next(0, 4);
-            if (((i != allQuestions[step].RightAnswer) && (j != allQuestions[step].RightAnswer) && (i != j)))
+            if (((i != allQuestions.ElementAt(step).RightAnswer) && (j != allQuestions.ElementAt(step).RightAnswer) && (i != j)))
             {
                 button = i;
                 button1 = j;
@@ -219,7 +225,7 @@ namespace FirstMillion_new
             {
                 
                 step += 1;
-                FillCells(allQuestions[step]);
+                FillCells(allQuestions.ElementAt(step));
                 ActiveSum(step);
                 
             }
@@ -287,8 +293,8 @@ namespace FirstMillion_new
 
                 string fromPassword = TxtPass.Text;
                 const string subject = "Допомога друга";
-                string body = "Запитання: " + allQuestions[step].Quest + " Відповіді: A: " + allQuestions[step].Answers[0] +
-                     ", B: " + allQuestions[step].Answers[1] + ", C: " + allQuestions[step].Answers[2] + ", D: " + allQuestions[step].Answers[0] + ". ";
+                string body = "Запитання: " + allQuestions.ElementAt(step).Quest + " Відповіді: A: " + allQuestions.ElementAt(step).Answers[0] +
+                     ", B: " + allQuestions.ElementAt(step).Answers[1] + ", C: " + allQuestions.ElementAt(step).Answers[2] + ", D: " + allQuestions.ElementAt(step).Answers[0] + ". ";
 
                 var smtp = new SmtpClient
                 {
