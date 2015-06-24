@@ -4,9 +4,9 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" onload="window.history.forward()">
 <head runat="server">
-    <link rel="stylesheet" href="styles.css"/>
-    <script src="scripts.js"></script>
-    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="Css/styles.css"/>
+    <script src="Jscripts/scripts.js"></script>
+    <script src="Jscripts/jquery.min.js"></script>
     <title></title>
     
     

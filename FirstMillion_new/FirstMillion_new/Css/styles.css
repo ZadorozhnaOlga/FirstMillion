@@ -1,7 +1,7 @@
 ﻿body {
     width:1440px;
     height:810px;
-    background: url("Resources/background_new.png") no-repeat;
+    background: url("../Resources/background_new.png") no-repeat;
     margin:auto;
 }
 
@@ -12,7 +12,7 @@
     text-align: center;
     color: #DDA0DD;
     font-size: 30px;
-    background: url("Resources/question.png") center no-repeat;
+    background: url("../Resources/question.png") center no-repeat;
     top: 330px;
     left: 70px;
     width: 828px;
@@ -41,7 +41,7 @@
 .tableAnswerA {
     width: 413px;
     height: 110px;
-    background:url(Resources/BtnA.png) center no-repeat;
+    background:url(../Resources/BtnA.png) center no-repeat;
     border: none;
     color: white;
     font-size: 20px;
@@ -50,14 +50,14 @@
 
 .tableAnswerA:hover {
     border: none;
-    background:url(Resources/BtnAHover.png) center no-repeat;
+    background:url(../Resources/BtnAHover.png) center no-repeat;
     
 }
 
 .tableAnswerARight {
     width: 413px;
     height: 110px;
-    background:url(Resources/BtnARight.png) center no-repeat;
+    background:url(../Resources/BtnARight.png) center no-repeat;
     border: none;
     color: white;
     font-size: 20px;
@@ -69,21 +69,21 @@
 .tableAnswerB {
     width: 413px;
     height: 110px;
-    background:url("Resources/BtnB.png") center no-repeat;
+    background:url("../Resources/BtnB.png") center no-repeat;
     border: none;
     color: white;
     font-size: 20px;
 }
 
 .tableAnswerB:hover {
-    background:url("Resources/BtnBHover.png") center no-repeat;
+    background:url("../Resources/BtnBHover.png") center no-repeat;
     border: none;
 }
 
 .tableAnswerBRight {
     width: 413px;
     height: 110px;
-    background:url("Resources/BtnBRight.png") center no-repeat;
+    background:url("../Resources/BtnBRight.png") center no-repeat;
     border: none;
     color: white;
     font-size: 20px;
@@ -94,21 +94,21 @@
 .tableAnswerC {
     width: 413px;
     height: 110px;
-    background: url("Resources/BtnC.png") center no-repeat;
+    background: url("../Resources/BtnC.png") center no-repeat;
     border: none;
     color: white;
     font-size: 20px;
 }
 
 .tableAnswerC:hover {
-    background: url("Resources/BtnCHover.png") center no-repeat;
+    background: url("../Resources/BtnCHover.png") center no-repeat;
     border: none;
 }
 
 .tableAnswerCRight {
     width: 413px;
     height: 110px;
-    background: url("Resources/BtnCRight.png") center no-repeat;
+    background: url("../Resources/BtnCRight.png") center no-repeat;
     border: none;
     color: white;
     font-size: 20px;
@@ -119,20 +119,20 @@
 .tableAnswerD {
     width: 413px;
     height: 110px;
-    background: url("Resources/BtnD.png") center no-repeat;
+    background: url("../Resources/BtnD.png") center no-repeat;
     border: none;
     color: white;
     font-size: 20px;
 }
 
 .tableAnswerD:hover {
-    background: url("Resources/BtnDHover.png") center no-repeat;
+    background: url("../Resources/BtnDHover.png") center no-repeat;
     border: none;
 }
 
 .tableAnswerDRight {
     
-    background: url("Resources/BtnDRight.png") center no-repeat;
+    background: url("../Resources/BtnDRight.png") center no-repeat;
     
     
     
@@ -223,7 +223,7 @@
 
 
 .Btn5050 {
-    background: url(Resources/Btn5050.png) no-repeat;
+    background: url(../Resources/Btn5050.png) no-repeat;
     width: 106px;
     height: 82px;
     border: none;
@@ -235,14 +235,14 @@
 }
 
 .Btn5050Used {
-    background: url(Resources/Btn5050Used.png) no-repeat;
+    background: url(../Resources/Btn5050Used.png) no-repeat;
     width: 106px;
     height: 82px;
     
 }
 
 .BtnCall {
-    background: url(Resources/BtnCall.png) no-repeat;
+    background: url(../Resources/BtnCall.png) no-repeat;
     width: 106px;
     height: 82px;
     border: none;
@@ -254,13 +254,13 @@
 }
 
 .BtnCallUsed {
-    background: url(Resources/BtnCallUsed.png) no-repeat;
+    background: url(../Resources/BtnCallUsed.png) no-repeat;
     width: 106px;
     height: 82px;
 }
 
 .BtnAsk {
-    background: url(Resources/BtnAsk.png) no-repeat;
+    background: url(../Resources/BtnAsk.png) no-repeat;
     width: 106px;
     height: 82px;
     border: none;
@@ -271,7 +271,7 @@
 }
 
 .BtnAskUsed {
-    background: url(Resources/BtnAskUsed.png) no-repeat;
+    background: url(../Resources/BtnAskUsed.png) no-repeat;
     width: 106px;
     height: 82px;
 }

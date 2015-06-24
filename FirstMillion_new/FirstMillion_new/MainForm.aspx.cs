@@ -23,10 +23,10 @@ namespace FirstMillion_new
         private const string SessionKey5050 = "50x50";
         private const string SessionKeyCall = "Call";
         private const string SessionKeyAsk = "Ask";
+        private const string SessionRepo = "Repo";
+
+
         
-
-
-
 
 
         static MainForm()
@@ -44,9 +44,21 @@ namespace FirstMillion_new
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            string str = Server.MapPath("/Resources/myQuestions.xml");
-            XmlQuestionRepository repo = new XmlQuestionRepository(str);
-            allQuestions = repo.GetQuestions();
+
+
+            XmlQuestionRepository repo = (XmlQuestionRepository)HttpContext.Current.Session[SessionRepo];
+            if (repo == null)
+            {
+                string str = Server.MapPath("/Resources/myQuestions.xml");
+                XmlQuestionRepository repository = new XmlQuestionRepository(str);
+                allQuestions = repository.GetQuestions();
+
+                HttpContext.Current.Session[SessionRepo] = repository;
+            }
+            //string str = Server.MapPath("/Resources/myQuestions.xml");
+            //XmlQuestionRepository repository = new XmlQuestionRepository(str);
+
+            //allQuestions = repository.GetQuestions();
                     
             
             Buttons = new Button[4] { BtnA, BtnB, BtnC, BtnD };
