@@ -1,0 +1,81 @@
+﻿
+.tableScores {
+    position:absolute;
+    width: 330px;
+    height: 600px;
+    left: 1100px;
+    top: 200px;
+    border: white;
+    /*background: url(Resources/scoresBlock.png) no-repeat;*/
+    color: white;
+}
+
+.tableCell {
+    color: orange;
+    height:15px;
+    font-size: 20px;
+    font-family:fantasy;
+    border: 1px solid white;
+    text-align: center;
+    background-color:transparent;
+}
+
+.tableCellUnFired {
+    height:15px;
+    font-size: 20px;
+    font-family:fantasy;
+    border: 1px solid white;
+    text-align: center;
+    background-color:transparent;
+    color:white;
+}
+
+.Red {
+    background-color: red;
+}
+
+
+
+
+.Red {
+    background-color: red;
+}
+
+
+
+@-webkit-keyframes pulsate 
+{ 
+	50% 
+		{ 
+			color: #fff; 
+			text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; 
+		} 
+}
+
+@keyframes pulsate 
+{ 
+	50% 
+		{ 
+			color: #fff; 
+			text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; 
+		} 
+}
+
+.Million 
+{
+
+    height:27px;
+    font-size: 25px;
+    font-family:fantasy;
+    border: 1px solid white;
+    text-align: center;
+    background-color:transparent;
+    color:white;
+
+	text-shadow: 0 -1px rgba(0,0,0,.1); 
+	 
+	-webkit-animation: pulsate 1.5s linear infinite; 
+	animation: pulsate 3s linear infinite; 
+}
+
+

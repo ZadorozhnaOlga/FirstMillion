@@ -121,7 +121,7 @@
     <RightAnswer>1</RightAnswer>
   </Question>
   <Question>
-    <Quest>На якому інструменты грав Шерлок Холмс?</Quest>
+    <Quest>На якому інструменті грав Шерлок Холмс?</Quest>
     <Answers>
       <string>Флейта</string>
       <string>Труба</string>

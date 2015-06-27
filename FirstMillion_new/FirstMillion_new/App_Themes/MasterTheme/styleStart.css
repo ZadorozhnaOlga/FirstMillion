@@ -1,0 +1,36 @@
+﻿.tableEnterName{
+    position: absolute;
+    left: 1000px;
+    top: 150px;
+    height: 20px;
+    text-align:center;
+}
+
+.LblStart {
+    color: orange;
+    background-color: black;
+    height: 40px;
+    font-size: 30px;
+    font-weight:bold;
+}
+
+.BtnStart{
+    margin-top:10px;
+    background-color: black;
+    color:orange;
+    height:40px;
+    font-size: 25px;
+    font-weight:bold;
+    border: 2px outset white;
+}
+
+.BtnStart:hover {
+    background-color: orange;
+    color:black;
+}
+
+.TxtName {
+    height:25px;
+    font-size: 20px;
+    text-align:center;
+}

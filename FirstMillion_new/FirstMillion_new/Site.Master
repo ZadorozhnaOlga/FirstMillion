@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="FirstMillion_new.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <title>FirstMillion</title>
+        <script src="Jscripts/scripts.js"></script>
+    <script src="Jscripts/jquery.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        
+            <div id="header">
+                Хто хоче стати мільйонером?
+            </div>
+             <div id="main-content">
+                  
+                    <asp:ContentPlaceHolder ID="content" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                  
+             </div>
+             <div id="footer">
+                  Designed by Olga Zadorozhna
+             </div>
+         
+               
+    
+    </form>
+</body>
+</html>

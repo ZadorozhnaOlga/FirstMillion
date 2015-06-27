@@ -10,16 +10,16 @@
 namespace FirstMillion_new {
     
     
-    public partial class MainForm {
+    public partial class Game {
         
         /// <summary>
-        /// form1 control.
+        /// BtnQuestion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Button BtnQuestion;
         
         /// <summary>
         /// BtnA control.
@@ -58,13 +58,13 @@ namespace FirstMillion_new {
         protected global::System.Web.UI.WebControls.Button BtnD;
         
         /// <summary>
-        /// TblScores control.
+        /// TblTooltips control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTable TblScores;
+        protected global::System.Web.UI.HtmlControls.HtmlTable TblTooltips;
         
         /// <summary>
         /// Btn5050 control.
@@ -130,12 +130,12 @@ namespace FirstMillion_new {
         protected global::System.Web.UI.WebControls.Button BtnSend;
         
         /// <summary>
-        /// BtnQuestion control.
+        /// ActiveScores control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnQuestion;
+        protected global::FirstMillion_new.Scores ActiveScores;
     }
 }

@@ -1,0 +1,273 @@
+﻿
+.Question {
+    
+    border-style: none;
+    margin-left: 0px;
+    position: absolute;
+    text-align: center;
+    color: #DDA0DD;
+    font-size: 30px;
+    background: url("images/question.png") center no-repeat;
+    top: 390px;
+    left: 175px;
+    width: 750px;
+    height:160px;
+    white-space: normal;
+    padding-left: 100px;  
+    padding-right:100px;  
+}
+
+.Restart {
+    border-style: none;
+    margin-left: 0px;
+    position: absolute;
+    text-align: center;
+    color: #DDA0DD;
+    font-size: 30px;
+    background: url("images/question.png") center no-repeat;
+    top: 390px;
+    left: 175px;
+    width: 750px;
+    height:160px;
+    white-space: normal;
+    padding-left: 100px;  
+    padding-right:100px;  
+}
+
+.Restart:hover {
+    border-style: none;
+    margin-left: 0px;
+    position: absolute;
+    text-align: center;
+    color: orange;
+    font-size: 30px;
+    background: url("images/question.png") center no-repeat;
+    top: 390px;
+    left: 175px;
+    width: 750px;
+    height:160px;
+    white-space: normal;
+    padding-left: 100px;  
+    padding-right:100px;  
+}
+
+.tableAnswers {
+    position: absolute;
+    left: 135px;
+    top: 560px;
+    border: none;
+    width:830px;
+}
+
+.tableAnswer {
+    width: 413px;
+    height: 110px;
+    border: none;
+    
+}
+
+.tableAnswerA {
+    width: 413px;
+    height: 110px;
+    background:url(images/BtnA.png) center no-repeat;
+    border: none;
+    color: white;
+    font-size: 20px;
+    
+}
+
+.tableAnswerA:hover {
+    border: none;
+    background:url(images/BtnAHover.png) center no-repeat;
+    
+}
+
+.tableAnswerARight {
+    width: 413px;
+    height: 110px;
+    background:url(images/BtnARight.png) center no-repeat;
+    border: none;
+    color: white;
+    font-size: 20px;
+    
+    
+}
+
+
+.tableAnswerB {
+    width: 413px;
+    height: 110px;
+    background:url("images/BtnB.png") center no-repeat;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.tableAnswerB:hover {
+    background:url("images/BtnBHover.png") center no-repeat;
+    border: none;
+}
+
+.tableAnswerBRight {
+    width: 413px;
+    height: 110px;
+    background:url("images/BtnBRight.png") center no-repeat;
+    border: none;
+    color: white;
+    font-size: 20px;
+    
+    
+}
+
+.tableAnswerC {
+    width: 413px;
+    height: 110px;
+    background: url("images/BtnC.png") center no-repeat;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.tableAnswerC:hover {
+    background: url("images/BtnCHover.png") center no-repeat;
+    border: none;
+}
+
+.tableAnswerCRight {
+    width: 413px;
+    height: 110px;
+    background: url("images/BtnCRight.png") center no-repeat;
+    border: none;
+    color: white;
+    font-size: 20px;
+    
+    
+}
+
+.tableAnswerD {
+    width: 413px;
+    height: 110px;
+    background: url("images/BtnD.png") center no-repeat;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.tableAnswerD:hover {
+    background: url("images/BtnDHover.png") center no-repeat;
+    border: none;
+}
+
+.tableAnswerDRight {
+    
+    background: url("images/BtnDRight.png") center no-repeat;
+    
+    
+    
+}
+
+
+.tableTooltips {
+    position:absolute;
+    left: 1100px;
+    top:70px;
+    width: 350px;
+    height: 80px;
+}
+
+.Tooltips {
+    height:80px;
+}
+
+
+.Btn5050 {
+    background: url(images/Btn5050.png) no-repeat;
+    width: 106px;
+    height: 82px;
+    border: none;
+    left:2px;
+}
+
+.Btn5050:hover {
+    border: 1px solid white;
+}
+
+.Btn5050Used {
+    background: url(images/Btn5050Used.png) no-repeat;
+    width: 106px;
+    height: 82px;
+    
+}
+
+.BtnCall {
+    background: url(images/BtnCall.png) no-repeat;
+    width: 106px;
+    height: 82px;
+    border: none;
+}
+
+.BtnCall:hover {
+
+    border: 1px solid white;
+}
+
+.BtnCallUsed {
+    background: url(images/BtnCallUsed.png) no-repeat;
+    width: 106px;
+    height: 82px;
+}
+
+.BtnAsk {
+    background: url(images/BtnAsk.png) no-repeat;
+    width: 106px;
+    height: 82px;
+    border: none;
+}
+
+.BtnAsk:hover {
+    border: 1px solid white;
+}
+
+.BtnAskUsed {
+    background: url(images/BtnAskUsed.png) no-repeat;
+    width: 106px;
+    height: 82px;
+}
+
+.Mail {
+    width: 230px;
+    visibility: hidden;
+    
+}
+
+.MailVisible {
+    width: 230px;
+    
+    
+}
+
+
+.Text {
+    width: 165px;
+    visibility: hidden;
+}
+
+.Mymail {
+    width: 160px;
+    visibility: hidden;
+}
+
+.MyMailVisible {
+    width: 157px;
+    
+}
+
+.Send {
+    width: 80px;
+    display: none;
+}
+
+.SendVisible {
+    width: 88px;
+    
+}
